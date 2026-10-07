@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Barbearia Prime — Corte masculino, barba e degradê com agendamento online</title>
+<meta name="description" content="Barbearia masculina premium. Corte masculino, barba e degradê. Agende seu horário online em poucos passos.">
+<meta property="og:title" content="Barbearia Prime — Barbearia masculina">
+<meta property="og:description" content="Agende corte, barba e degradê online.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22&gt;&lt;text y=%22.9em%22 font-size=%2290%22&gt;✂️&lt;/text&gt;&lt;/svg&gt;">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,900&amp;family=Manrope:wght@400;600;800&amp;display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"BarberShop","name":"Barbearia Prime","telephone":"+5579999990000","address":{"@type":"PostalAddress","streetAddress":"Rua Exemplo, 123","addressLocality":"Cidade"},"openingHours":["Mo-Th 09:00-20:00","Fr 09:00-21:00","Sa 08:00-18:00"],"aggregateRating":{"@type":"AggregateRating","ratingValue":"4.9","reviewCount":"500"}}</script>
+<style>
+:root{--bg:#0a0a0a;--bg2:#161616;--bg3:#232323;--fg:#f3eee4;--mut:#a39d90;--gold:#c9a15b;--gold2:#e2c07f;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:calc(76px + env(safe-area-inset-top,0px))}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 1rem/1.6 Manrope,system-ui,sans-serif;overflow-x:hidden}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;line-height:1.05;margin:0}
+h2{font-size:clamp(2rem,5vw,3.4rem);font-weight:900;text-transform:uppercase;letter-spacing:-.01em}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold2);outline-offset:3px}
+section{padding:clamp(4rem,9vw,7rem) 1.25rem}
+.w{max-width:1120px;margin:0 auto}
+.sub{color:var(--mut);max-width:56ch;margin:.8rem 0 2.5rem}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:.8rem 1.6rem;border:1px solid var(--gold);background:var(--gold);color:#120d04;font:800 .85rem Manrope,sans-serif;letter-spacing:.12em;text-transform:uppercase;text-decoration:none;cursor:pointer;transition:.25s}
+.btn:hover{background:var(--gold2);transform:translateY(-2px)}
+.btn.o{background:transparent;color:var(--fg);border-color:#5a5448}.btn.o:hover{border-color:var(--gold);color:var(--gold2)}
+.btn:disabled{opacity:.4;cursor:not-allowed;transform:none}
+header{position:fixed;inset:0 0 auto 0;z-index:50;padding-top:env(safe-area-inset-top,0px);transition:.3s}
+header.s{background:rgba(10,10,10,.72);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid #2a2a2a}
+.nav{max-width:1120px;margin:0 auto;height:72px;padding:0 1.25rem;display:flex;align-items:center;gap:1.6rem}
+.logo{font:900 1.35rem Fraunces,serif;text-decoration:none;margin-right:auto}.logo b{color:var(--gold)}
+.nav a:not(.logo):not(.btn){text-decoration:none;font-size:.9rem;color:var(--mut);transition:.2s}.nav a:hover{color:var(--gold2)}
+#bg{display:none;background:none;border:1px solid #444;color:var(--fg);width:48px;height:48px;font-size:1.3rem}
+.hero{min-height:100svh;display:grid;align-items:center;padding-top:7rem;position:relative;overflow:hidden}
+.hero .w{display:grid;grid-template-columns:1.15fr .85fr;gap:3rem;align-items:center}
+.hero h1{font-size:clamp(3.2rem,9vw,7.2rem);font-weight:900;text-transform:uppercase;letter-spacing:-.025em;animation:up .9s both}
+.hero h1 span{display:block;color:transparent;-webkit-text-stroke:2px var(--gold)}
+.hero p{font-size:1.15rem;color:var(--mut);max-width:46ch;animation:up .9s .15s both}
+.cta{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:2rem;animation:up .9s .3s both}
+.pulse{animation:pl 2.6s infinite}
+@keyframes pl{0%{box-shadow:0 0 0 0 rgba(201,161,91,.5)}70%{box-shadow:0 0 0 14px transparent}100%{box-shadow:0 0 0 0 transparent}}
+@keyframes up{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:none}}
+.art{aspect-ratio:4/5;background:radial-gradient(circle at 30% 20%,#3a2f1c,transparent 55%),linear-gradient(160deg,#1d1d1d,#090909);border:1px solid #333;position:relative;display:grid;place-items:center;animation:up 1s .2s both}
+.art svg{width:62%;stroke:var(--gold);fill:none;stroke-width:2.5}
+.art i{position:absolute;font:600 .8rem Manrope;font-style:normal;background:rgba(10,10,10,.85);border:1px solid #444;padding:.5rem .9rem;backdrop-filter:blur(6px)}
+.trust{background:var(--bg2);border-block:1px solid #262626;padding:2rem 1.25rem}
+.trust .w{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;text-align:center}
+.trust b{display:block;font:900 1.7rem Fraunces,serif;color:var(--gold2)}.trust span{color:var(--mut);font-size:.88rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:1.1rem}
+.card{background:var(--bg2);border:1px solid #2a2a2a;padding:1.6rem;display:flex;flex-direction:column;gap:.6rem;transition:.3s}
+.card:hover{border-color:var(--gold);transform:translateY(-4px)}
+.card h3{font-size:1.4rem}.card p{margin:0;color:var(--mut);font-size:.93rem;flex:1}
+.pr{font:900 1.5rem Fraunces,serif;color:var(--gold2)}.pr s{font:400 .9rem Manrope;color:var(--mut);margin-right:.4rem}
+.av{width:72px;height:72px;border-radius:50%;background:linear-gradient(135deg,var(--gold),#5b4520);display:grid;place-items:center;font:900 1.5rem Fraunces;color:#120d04}
+.rv{opacity:0;transform:translateY(22px);transition:.7s}.rv.in{opacity:1;transform:none}
+#book{background:var(--bg2)}
+.box{background:var(--bg);border:1px solid #2f2f2f;padding:clamp(1.2rem,3vw,2.2rem);min-height:380px}
+.steps{display:flex;gap:.4rem;list-style:none;padding:0;margin:0 0 1.6rem;flex-wrap:wrap}
+.steps li{font-size:.78rem;padding:.35rem .7rem;border:1px solid #333;color:var(--mut)}.steps .on{border-color:var(--gold);color:var(--gold2)}.steps .ok{background:#2a2316;color:var(--fg)}
+.opts{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:.7rem}
+.opt{background:var(--bg2);border:1px solid #333;color:var(--fg);padding:.9rem;min-height:56px;text-align:left;font:600 .95rem Manrope;cursor:pointer;transition:.2s}
+.opt:hover:not(:disabled){border-color:var(--gold)}.opt small{display:block;color:var(--mut);font-weight:400}
+.opt.sel{border-color:var(--gold2);background:#2a2316}
+.opt:disabled{opacity:.35;text-decoration:line-through;cursor:not-allowed}
+label{display:block;margin:.9rem 0 .3rem;font-weight:600;font-size:.9rem}
+input,select,textarea{width:100%;min-height:48px;background:var(--bg2);border:1px solid #3a3a3a;color:var(--fg);padding:.6rem .8rem;font:inherit}
+.err{color:#ff8b7a;font-size:.88rem;margin:.5rem 0}
+.sum{list-style:none;padding:0;margin:0 0 1.4rem}.sum li{display:flex;justify-content:space-between;padding:.7rem 0;border-bottom:1px solid #2a2a2a}
+.nv{display:flex;gap:.7rem;margin-top:1.5rem;flex-wrap:wrap}
+.ok-t{font:900 2rem Fraunces;color:var(--gold2)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+.st{display:flex;gap:.5rem;align-items:center;font-weight:800;margin:.8rem 0}
+table{width:100%;border-collapse:collapse;font-size:.88rem}td,th{padding:.55rem .4rem;border-bottom:1px solid #2a2a2a;text-align:left}
+.tb{overflow-x:auto}
+details{border-bottom:1px solid #2f2f2f;padding:1rem 0}summary{cursor:pointer;font-weight:600;min-height:32px}details p{color:var(--mut);margin:.6rem 0 0}
+.fin{text-align:center;background:linear-gradient(180deg,var(--bg),#1b1508)}
+footer{background:#050505;padding:3.5rem 1.25rem 7rem;border-top:1px solid #222;color:var(--mut);font-size:.9rem}
+footer .w{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:2rem}footer a{display:block;text-decoration:none;padding:.15rem 0}footer a:hover{color:var(--gold2)}
+.wa{position:fixed;right:1rem;bottom:calc(1rem + env(safe-area-inset-bottom,0px));z-index:60;width:60px;height:60px;border-radius:50%;background:#25d366;color:#04230f;display:grid;place-items:center;font-size:1.7rem;text-decoration:none;box-shadow:0 8px 24px rgba(0,0,0,.5)}
+.bar{display:none}
+#adm{position:fixed;inset:0;z-index:90;background:var(--bg);overflow:auto;padding:calc(1.2rem + env(safe-area-inset-top,0px)) 1.25rem 3rem}
+#adm[hidden]{display:none}
+.kp{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.8rem;margin:1rem 0 2rem}.kp div{background:var(--bg2);padding:1rem;border:1px solid #2a2a2a}.kp b{display:block;font:900 1.4rem Fraunces;color:var(--gold2)}
+.sm{min-height:36px;padding:.3rem .7rem;background:var(--bg3);border:1px solid #444;color:var(--fg);cursor:pointer;font:inherit;font-size:.8rem}
+@media(max-width:860px){.nav a:not(.logo):not(.btn){display:none}.nav.open a:not(.logo):not(.btn){display:block}#bg{display:block}.nav{flex-wrap:wrap;height:auto;min-height:72px;padding-block:.6rem}.nav.open{background:var(--bg)}.nav .btn.h{display:none}.hero .w,.two{grid-template-columns:1fr}.art{aspect-ratio:16/10}.trust .w{grid-template-columns:1fr 1fr}
+.bar{display:block;position:fixed;inset:auto 0 0 0;z-index:55;padding:.6rem 1rem calc(.6rem + env(safe-area-inset-bottom,0px));background:rgba(10,10,10,.92);backdrop-filter:blur(10px);border-top:1px solid #333}.bar .btn{width:100%}.wa{bottom:calc(5.2rem + env(safe-area-inset-bottom,0px))}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header id="hd"><nav class="nav" id="nv" aria-label="Principal">
+<a class="logo" href="#inicio" id="lg">Barbearia <b>Prime</b></a>
+<a href="#inicio">Início</a><a href="#servicos">Serviços</a><a href="#barbeiros">Barbeiros</a><a href="#galeria">Galeria</a><a href="#avaliacoes">Avaliações</a><a href="#planos">Planos</a><a href="#contato">Contato</a>
+<a class="btn h" href="#agendar" data-book="">Agendar horário</a>
+<button id="bg" aria-label="Abrir menu" aria-expanded="false">☰</button></nav></header>
+
+<main id="inicio">
+<section class="hero"><div class="w"><div>
+<h1><em style="font-style:normal">Seu estilo.</em><span>Nosso trabalho.</span></h1>
+<p>Mais do que um corte. Uma experiência completa para quem exige estilo, precisão e qualidade.</p>
+<div class="cta"><a class="btn pulse" href="#agendar" data-book="">Agendar agora</a><a class="btn o" href="#servicos">Conhecer serviços</a></div></div>
+<div class="art" role="img" aria-label="Ilustração de tesoura de barbeiro"><svg viewBox="0 0 100 100"><circle cx="30" cy="72" r="11"></circle><circle cx="70" cy="72" r="11"></circle><path d="M36 63 66 14M64 63 34 14"></path></svg>
+<i style="top:8%;left:6%">★ 5.0 no Google</i><i style="bottom:14%;right:6%">+2.000 clientes atendidos</i><i style="bottom:6%;left:6%">Barbeiros profissionais</i></div></div></section>
+
+<div class="trust"><div class="w"><div><b>★ 5.0</b><span>no Google</span></div><div><b>+2.000</b><span>clientes</span></div><div><b>+5 anos</b><span>de experiência</span></div><div><b>100%</b><span>satisfação</span></div></div></div>
+
+<section id="servicos"><div class="w"><h2 class="rv">Nossos serviços</h2><p class="sub rv">Escolha um serviço e agende direto pelo WhatsApp da barbearia.</p><div class="grid" id="svs"></div></div></section>
+
+<section id="barbeiros"><div class="w"><h2 class="rv">Conheça nosso time</h2><p class="sub rv">Profissionais com especialidades diferentes. Escolha quem cuida do seu visual.</p><div class="grid" id="brs"></div></div></section>
+
+<section id="galeria" style="background:var(--bg2)"><div class="w two"><div class="rv"><h2>Mais que uma barbearia. Um estilo de vida.</h2><p class="sub">Há mais de 5 anos cuidando do visual de quem valoriza detalhe. Ambiente reservado, atendimento no horário e acabamento na navalha. Troque este texto pela história real da casa.</p><p style="color:var(--mut)">+10.000 cortes · +5 profissionais · +2.000 clientes</p></div><div class="art rv" style="aspect-ratio:1" role="img" aria-label="Espaço reservado para foto da barbearia"><i>Foto da barbearia aqui</i></div></div></section>
+
+<section id="avaliacoes"><div class="w"><h2 class="rv">O que nossos clientes dizem</h2><p class="sub rv"><b style="color:var(--gold2);font-size:1.4rem">4.9 / 5</b> <span>· +500 avaliações</span></p><div class="grid" id="rvs"></div></div></section>
+
+<section id="planos" style="background:var(--bg2)"><div class="w"><h2 class="rv">Barbeiro Club</h2><p class="sub rv">Assinatura mensal com agendamento prioritário. Ao assinar, abrimos o WhatsApp para fechar com a recepção.</p><div class="grid" id="pls"></div></div></section>
+
+<section id="ofertas"><div class="w"><h2 class="rv">Ofertas especiais</h2><div class="card rv" style="max-width:420px;margin-top:2rem"><h3 id="ofn">Corte + Barba</h3><p>O combo completo com toalha quente.</p><div class="pr"><s>De R$ 80</s><span>Por R$ 69</span></div><a class="btn" href="#agendar" id="of">Aproveitar oferta</a></div></div></section>
+
+<section id="contato" style="background:var(--bg2)"><div class="w two"><div class="rv"><h2>Onde estamos</h2><p class="sub" id="ct"></p><div class="cta"><a class="btn" id="rt" target="_blank" rel="noopener">Como chegar</a><a class="btn o" id="gm" target="_blank" rel="noopener">Abrir no Google Maps</a></div></div>
+<div class="rv"><h3>Horário de funcionamento</h3><div class="st" id="op"></div><table id="hr"></table></div></div></section>
+
+<section id="faq"><div class="w" style="max-width:760px"><h2 class="rv">Perguntas frequentes</h2><div style="margin-top:2rem">
+<details><summary>Preciso agendar com antecedência?</summary><p>Recomendamos. Os melhores horários, principalmente sexta e sábado, acabam rápido.</p></details>
+<details><summary>Posso escolher meu barbeiro?</summary><p>Sim. No agendamento você escolhe o profissional ou deixa em "Qualquer barbeiro".</p></details>
+<details><summary>Posso cancelar meu horário?</summary><p>Pode, avisando com pelo menos 2 horas de antecedência pelo WhatsApp.</p></details>
+<details><summary>Quais formas de pagamento vocês aceitam?</summary><p>Pix, cartão de débito e crédito e dinheiro.</p></details>
+<details><summary>Vocês atendem crianças?</summary><p>Sim, temos o Corte Infantil com duração própria.</p></details>
+<details><summary>Posso chegar atrasado?</summary><p>Tolerância de 10 minutos. Depois disso o horário pode ser reaproveitado.</p></details>
+<details><summary>Como funciona o plano mensal?</summary><p>Você escolhe um plano no Barbeiro Club e usa os benefícios com agendamento prioritário.</p></details></div></div></section>
+
+<section class="fin"><div class="w"><h2 class="rv">Pronto para renovar seu estilo?</h2><p class="sub rv" style="margin-inline:auto">Agende seu horário e experimente uma nova experiência em barbearia.</p><div class="cta" style="justify-content:center"><a class="btn pulse" href="#agendar" data-book="">Agendar meu horário</a><a class="btn o wl" target="_blank" rel="noopener">Falar no WhatsApp</a></div></div></section>
+</main>
+
+<footer><div class="w"><div><div class="logo" style="margin-bottom:.6rem" id="fn"></div><p>Barbearia masculina com atendimento de precisão e ambiente premium.</p></div>
+<div><a href="#inicio">Início</a><a href="#servicos">Serviços</a><a href="#" data-book="">Agendamento</a><a href="#barbeiros">Barbeiros</a><a href="#galeria">Galeria</a><a href="#planos">Planos</a><a href="#contato">Contato</a></div>
+<div id="fc"></div><div><a href="#">Instagram</a><a href="#">Facebook</a><a href="#">TikTok</a><a href="#admin" style="margin-top:1rem">Painel do administrador</a></div></div>
+<p class="w" style="margin-top:2rem" id="cp"></p></footer>
+
+<a class="wa wl" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">💬</a>
+<div class="bar"><a class="btn pulse" href="#agendar" data-book="">Agendar horário</a></div>
+<div id="adm" hidden=""></div>
+
+<script id="state" type="application/json">{"shop":{"name":"Barbearia Prime","wa":"5579999990000","tel":"(79) 99999-0000","mail":"contato@barbeariaprime.com","addr":"Rua Exemplo, 123 — Cidade"},"gold":"#c9a15b","gold2":"#e2c07f","t":{},"img":{"hero":"","about":""},"services":[{"n":"Corte Masculino","d":"Tesoura e máquina com acabamento na navalha.","p":50,"m":30},{"n":"Corte + Barba","d":"O combo completo com toalha quente.","p":69,"m":60},{"n":"Barba","d":"Modelagem, navalha e hidratação.","p":40,"m":30},{"n":"Degradê","d":"Transição limpa, do zero ao topo.","p":55,"m":30},{"n":"Sobrancelha","d":"Alinhamento na navalha, natural.","p":20,"m":30},{"n":"Corte Infantil","d":"Paciência e estilo para os pequenos.","p":40,"m":30},{"n":"Platinado / Pigmentação","d":"Descoloração ou cor com cuidado total.","p":150,"m":60}],"barbers":[{"n":"Lucas Almeida","s":"Especialista em Degradê","r":4.9,"c":820,"img":""},{"n":"Rafael Costa","s":"Barba e navalha","r":4.8,"c":640},{"n":"Diego Martins","s":"Colorimetria","r":5,"c":510}],"hours":{"0":null,"1":[9,20],"2":[9,20],"3":[9,20],"4":[9,20],"5":[9,21],"6":[8,18]},"reviews":[{"n":"João Silva","t":"Excelente atendimento e corte impecável. Com certeza voltarei."},{"n":"Marcos P.","t":"Degradê perfeito, no horário marcado e sem fila."},{"n":"André L.","t":"Melhor barba que já fiz. Ambiente top."},{"n":"Felipe R.","t":"Agendei pelo WhatsApp em um minuto. Muito prático."},{"n":"Thiago M.","t":"Levo meu filho todo mês. Paciência e qualidade."},{"n":"Bruno C.","t":"Platinado ficou exatamente como eu queria."}],"plans":[{"n":"Plano Essencial","p":79,"b":"2 cortes por mês\nAgendamento prioritário\n10% em produtos","bt":"Assinar plano"},{"n":"Plano Premium","p":129,"b":"Cortes ilimitados\n2 barbas por mês\nAgendamento prioritário\n15% em produtos","bt":"Assinar plano"},{"n":"Plano VIP","p":199,"b":"Cortes ilimitados\nBarba ilimitada\nAtendimento prioritário\n20% em produtos\nBenefícios exclusivos","bt":"Quero ser VIP"}]}</script>
+<script>
+const $=(s,r=document)=>r.querySelector(s),$$=(s,r=document)=>[...r.querySelectorAll(s)];
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const SRC='<!doctype html>\n'+document.documentElement.outerHTML;
+const def={shop:{name:'Barbearia Prime',wa:'5579999990000',tel:'(79) 99999-0000',mail:'contato@barbeariaprime.com',addr:'Rua Exemplo, 123 — Cidade'},gold:'#c9a15b',gold2:'#e2c07f',t:{},img:{hero:'',about:''},
+services:[{n:'Corte Masculino',d:'Tesoura e máquina com acabamento na navalha.',p:50,m:30},{n:'Corte + Barba',d:'O combo completo com toalha quente.',p:69,m:60},{n:'Barba',d:'Modelagem, navalha e hidratação.',p:40,m:30},{n:'Degradê',d:'Transição limpa, do zero ao topo.',p:55,m:30},{n:'Sobrancelha',d:'Alinhamento na navalha, natural.',p:20,m:30},{n:'Corte Infantil',d:'Paciência e estilo para os pequenos.',p:40,m:30},{n:'Platinado / Pigmentação',d:'Descoloração ou cor com cuidado total.',p:150,m:60}],
+barbers:[{n:'Lucas Almeida',s:'Especialista em Degradê',r:4.9,c:820},{n:'Rafael Costa',s:'Barba e navalha',r:4.8,c:640},{n:'Diego Martins',s:'Colorimetria',r:5.0,c:510}],
+hours:{0:null,1:[9,20],2:[9,20],3:[9,20],4:[9,20],5:[9,21],6:[8,18]},
+reviews:[{n:'João Silva',t:'Excelente atendimento e corte impecável. Com certeza voltarei.'},{n:'Marcos P.',t:'Degradê perfeito, no horário marcado e sem fila.'},{n:'André L.',t:'Melhor barba que já fiz. Ambiente top.'},{n:'Felipe R.',t:'Agendei pelo WhatsApp em um minuto. Muito prático.'},{n:'Thiago M.',t:'Levo meu filho todo mês. Paciência e qualidade.'},{n:'Bruno C.',t:'Platinado ficou exatamente como eu queria.'}],
+plans:[{n:'Plano Essencial',p:79,b:'2 cortes por mês\nAgendamento prioritário\n10% em produtos',bt:'Assinar plano'},{n:'Plano Premium',p:129,b:'Cortes ilimitados\n2 barbas por mês\nAgendamento prioritário\n15% em produtos',bt:'Assinar plano'},{n:'Plano VIP',p:199,b:'Cortes ilimitados\nBarba ilimitada\nAtendimento prioritário\n20% em produtos\nBenefícios exclusivos',bt:'Quero ser VIP'}]};
+const DAYS=['Domingo','Segunda','Terça','Quarta','Quinta','Sexta','Sábado'];
+let DB;try{DB=JSON.parse($('#state').textContent)}catch(e){}DB=Object.assign(structuredClone(def),DB||{});let dirty=false;
+const save=()=>{dirty=true;const b=$('#pub');if(b){b.disabled=false;b.textContent='Publicar alterações *'}};
+const brl=n=>'R$ '+Number(n).toLocaleString('pt-BR');
+const wa=t=>`https://wa.me/${DB.shop.wa}?text=${encodeURIComponent(t)}`;
+
+/* textos estáticos editáveis: cada texto da página recebe uma chave */
+const SKIP='#bg,#adm,#svs,#brs,#rvs,#pls,#hr,#ct,#fc,#op,#fn,#cp,#lg,.wa,[href="#admin"]',DEF_T={};
+const ED=$$('header .nav a,main *,footer *,.bar *').filter(e=>!e.children.length&&e.textContent.trim()&&!e.closest(SKIP));
+ED.forEach((e,i)=>{e.dataset.k='e'+i;DEF_T['e'+i]=e.textContent});
+
+function paint(){
+  const S=DB.shop,R=document.documentElement.style;R.setProperty('--gold',DB.gold);R.setProperty('--gold2',DB.gold2);
+  ED.forEach(e=>e.textContent=DB.t[e.dataset.k]??DEF_T[e.dataset.k]);
+  $('#svs').innerHTML=DB.services.map(s=>`<article class="card rv"><h3>${esc(s.n)}</h3><p>${esc(s.d)} · ${s.m} min</p><div class="pr">${brl(s.p)}</div><a class="btn o" target="_blank" rel="noopener" href="${wa(`Olá! Gostaria de agendar ${s.n} na ${S.name}.`)}">Agendar</a></article>`).join('');
+  $('#brs').innerHTML=DB.barbers.map(b=>`<article class="card rv">${b.img?`<img class="av" src="${b.img}" alt="Foto de ${esc(b.n)}" loading="lazy" style="object-fit:cover">`:`<div class="av" aria-hidden="true">${esc(b.n[0]||'?')}</div>`}<h3>${esc(b.n)}</h3><p>${esc(b.s)}<br>★★★★★ ${b.r} · ${b.c} clientes</p><a class="btn o" target="_blank" rel="noopener" href="${wa(`Olá! Gostaria de agendar um horário com ${b.n} na ${S.name}.`)}">Agendar com ${esc(b.n.split(' ')[0])}</a></article>`).join('');
+  $('#rvs').innerHTML=DB.reviews.map(r=>`<figure class="card rv" style="margin:0"><div style="color:var(--gold2)">★★★★★</div><blockquote style="margin:0;flex:1">“${esc(r.t)}”</blockquote><figcaption style="color:var(--mut)">— ${esc(r.n)}</figcaption></figure>`).join('');
+  $('#pls').innerHTML=DB.plans.map((p,i)=>`<article class="card rv" style="${i==2?'border-color:var(--gold)':''}"><h3>${esc(p.n)}</h3><div class="pr">R$ ${esc(p.p)}/mês</div><ul style="color:var(--mut);padding-left:1.1rem;margin:0;flex:1">${p.b.split('\n').filter(Boolean).map(x=>`<li>${esc(x)}</li>`).join('')}</ul><a class="btn" target="_blank" rel="noopener" href="${wa(`Olá! Quero assinar o ${p.n} (R$ ${p.p}/mês) na ${S.name}.`)}">${esc(p.bt)}</a></article>`).join('');
+  $('#hr').innerHTML=[1,2,3,4,5,6,0].map(d=>`<tr><td>${DAYS[d]}</td><td>${DB.hours[d]?DB.hours[d][0]+':00 às '+DB.hours[d][1]+':00':'Fechado'}</td></tr>`).join('');
+  $('#ct').innerHTML=`${esc(S.addr)}<br>Telefone: ${esc(S.tel)}<br>WhatsApp: ${esc(S.tel)}`;
+  const q=encodeURIComponent(S.addr);$('#rt').href=`https://www.google.com/maps/dir/?api=1&destination=${q}`;$('#gm').href=`https://www.google.com/maps/search/?api=1&query=${q}`;
+  $('#fn').textContent=S.name;$('#lg').textContent=S.name;$('#cp').textContent=`© 2026 ${S.name}. Todos os direitos reservados.`;
+  $('#fc').innerHTML=`<a href="tel:${S.tel.replace(/\D/g,'')}">${esc(S.tel)}</a><a href="mailto:${esc(S.mail)}">${esc(S.mail)}</a><span>${esc(S.addr)}</span>`;
+  $$('[data-book],.wl').forEach(a=>{a.href=wa(`Olá! Gostaria de agendar um horário na ${S.name}.`);a.target='_blank';a.rel='noopener'});
+  const of=$('#of');of.href=wa(`Olá! Gostaria de aproveitar a oferta ${$('#ofn')?.textContent||'Corte + Barba'} na ${S.name}.`);of.target='_blank';of.rel='noopener';
+  const ph=(s,src,hide)=>{const a=$(s);a.style.backgroundImage=src?`url(${src})`:'';a.style.backgroundSize='cover';a.style.backgroundPosition='center';$$(hide,a).forEach(x=>x.style.display=src?'none':'')};ph('.hero .art',DB.img.hero,'svg');ph('#galeria .art',DB.img.about,'svg,i');
+  openNow();reveal()}
+function openNow(){const n=new Date(),h=DB.hours[n.getDay()],m=n.getHours()*60+n.getMinutes();$('#op').textContent=h&&m>=h[0]*60&&m<h[1]*60?'🟢 ABERTO AGORA':'🔴 FECHADO'}
+function reveal(){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});$$('.rv:not(.in)').forEach(e=>io.observe(e))}
+document.addEventListener('click',e=>{if(e.target.closest('#bg')){const o=$('#nv').classList.toggle('open');$('#bg').setAttribute('aria-expanded',o)}else if(e.target.closest('.nav a'))$('#nv').classList.remove('open')});
+
+/* ---------- Painel (senha) ---------- */
+let ok=false;
+const V=p=>p.split('.').reduce((o,k)=>o[k],DB);
+const F=(p,l,t='text')=>`<div><label for="${p}">${l}</label><input id="${p}" type="${t}" data-p="${p}" value="${esc(V(p))}"></div>`;
+const IMGF=i=>`<div><label for="bi${i}">Foto</label><input id="bi${i}" type="file" accept="image/jpeg,image/png,image/webp" data-bimg="${i}">${DB.barbers[i].img?`<button class="sm" data-a="rmbimg:${i}">Remover foto</button>`:''}</div>`;
+const TA=(p,l)=>`<div><label for="${p}">${l}</label><textarea id="${p}" rows="4" data-p="${p}">${esc(V(p))}</textarea></div>`;
+const LIST=(k,title,fs,tpl)=>`<h3 style="margin-top:2rem">${title}</h3>${DB[k].map((x,i)=>`<div class="card" style="margin:.6rem 0"><div class="opts" style="grid-template-columns:repeat(auto-fit,minmax(180px,1fr))">${fs(i)}</div><button class="sm" data-a="del:${k}:${i}" style="align-self:start">Excluir</button></div>`).join('')}<button class="btn o" data-a="add:${k}">Adicionar</button>`;
+function login(){$('#adm').innerHTML='<div class="w" style="max-width:420px;padding-top:15vh"><h2 style="font-size:2rem">Painel</h2><p style="color:var(--mut)">Apenas o dono desta página pode editar. Abra o link logado na conta que publicou o site.</p><a class="btn o" href="#">Voltar ao site</a></div>'}
+function adm(){
+  const g={};ED.forEach(e=>{const s=e.closest('section,.trust,footer,header,.bar'),n=s?(s.id||s.className.split(' ')[0]||'topo'):'outros';(g[n]=g[n]||[]).push(e.dataset.k)});
+  const tx=Object.entries(g).map(([n,ks])=>`<details><summary>Textos da seção: ${esc(n)}</summary><div class="opts" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))">${ks.map(k=>{const v=DB.t[k]??DEF_T[k];return `<div><label for="t${k}">${esc(DEF_T[k].slice(0,38))}</label>${v.length>55?`<textarea id="t${k}" rows="3" data-tk="${k}">${esc(v)}</textarea>`:`<input id="t${k}" data-tk="${k}" value="${esc(v)}">`}</div>`}).join('')}</div></details>`).join('');
+  const hrs=[1,2,3,4,5,6,0].map(d=>`<div><label>${DAYS[d]} (abre / fecha, vazio = fechado)</label><div style="display:flex;gap:.4rem"><input type="number" min="0" max="24" aria-label="${DAYS[d]} abre" data-h="${d}" data-i="0" value="${DB.hours[d]?.[0]??''}"><input type="number" min="0" max="24" aria-label="${DAYS[d]} fecha" data-h="${d}" data-i="1" value="${DB.hours[d]?.[1]??''}"></div></div>`).join('');
+  $('#adm').innerHTML=`<div class="w"><div style="display:flex;justify-content:space-between;align-items:center;gap:.6rem;flex-wrap:wrap"><h2 style="font-size:2rem">Painel</h2><div><button class="btn o" data-a="reset">Restaurar padrão</button> <button class="btn" id="pub" data-a="pub" disabled>Publicar alterações</button> <a class="btn o" href="#">Ver site</a></div></div>
+  <h3 style="margin-top:2rem">Dados da barbearia e cores</h3><div class="opts" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">${F('shop.name','Nome')}${F('shop.tel','Telefone')}${F('shop.wa','WhatsApp (55 + DDD + número)')}${F('shop.mail','E-mail')}${F('shop.addr','Endereço')}${F('gold','Cor principal','color')}${F('gold2','Cor de destaque','color')}</div>
+  <h3 style="margin-top:2rem">Imagens</h3><div class="opts" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr))"><div><label for="ih">Foto principal (topo)</label><input id="ih" type="file" accept="image/jpeg,image/png,image/webp" data-img="hero">${DB.img.hero?'<button class="sm" data-a="rmimg:hero">Remover</button>':''}</div><div><label for="ia">Foto da barbearia</label><input id="ia" type="file" accept="image/jpeg,image/png,image/webp" data-img="about">${DB.img.about?'<button class="sm" data-a="rmimg:about">Remover</button>':''}</div></div>
+  <h3 style="margin-top:2rem">Horário de funcionamento</h3><div class="opts" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr))">${hrs}</div>
+  ${LIST('services','Serviços',i=>F(`services.${i}.n`,'Nome')+F(`services.${i}.d`,'Descrição')+F(`services.${i}.p`,'Preço (R$)','number')+F(`services.${i}.m`,'Minutos','number'))}
+  ${LIST('barbers','Barbeiros',i=>F(`barbers.${i}.n`,'Nome')+F(`barbers.${i}.s`,'Especialidade')+F(`barbers.${i}.r`,'Nota','number')+F(`barbers.${i}.c`,'Clientes','number')+IMGF(i))}
+  ${LIST('reviews','Avaliações',i=>F(`reviews.${i}.n`,'Cliente')+TA(`reviews.${i}.t`,'Depoimento'))}
+  ${LIST('plans','Planos',i=>F(`plans.${i}.n`,'Nome')+F(`plans.${i}.p`,'Preço mensal')+TA(`plans.${i}.b`,'Benefícios (um por linha)')+F(`plans.${i}.bt`,'Texto do botão'))}
+  <h3 style="margin-top:2rem">Todos os textos da página</h3>${tx}
+  <p style="color:var(--mut);margin-top:2rem">Suas edições aparecem aqui como prévia. Clique em "Publicar alterações" para que todos os visitantes vejam. O painel só abre para o dono da página (a conta que publicou).</p></div>`}
+async function route(){const o=location.hash=='#admin';$('#adm').hidden=!o;document.body.style.overflow=o?'hidden':'';if(!o)return;try{const u=await claude.use('user');ok=!!(u&&u.canEdit())}catch(e){ok=false}ok?adm():login()}
+document.addEventListener('click',e=>{const t=e.target.closest('[data-a]');if(!t)return;const [a,k,i]=t.dataset.a.split(':');
+  if(a=='pub')return publishAll();
+  if(a=='rmimg')DB.img[k]='';
+  if(a=='rmbimg')DB.barbers[+k].img='';
+  if(a=='reset'){if(!confirm('Apagar todas as edições e voltar ao conteúdo padrão?'))return;DB=structuredClone(def)}
+  if(a=='del')DB[k].splice(+i,1);
+  if(a=='add')DB[k].push(structuredClone({services:{n:'Novo serviço',d:'Descrição',p:0,m:30},barbers:{n:'Novo barbeiro',s:'Especialidade',r:5,c:0},reviews:{n:'Cliente',t:'Depoimento'},plans:{n:'Novo plano',p:0,b:'Benefício',bt:'Assinar plano'}}[k]));
+  save();paint();adm()});
+document.addEventListener('change',e=>{const t=e.target;if(t.type=='file')return upImg(t);
+  if(t.dataset.tk){DB.t[t.dataset.tk]=t.value}
+  else if(t.dataset.p){const ks=t.dataset.p.split('.'),l=ks.pop(),o=ks.reduce((o,x)=>o[x],DB);o[l]=t.type=='number'?+t.value||0:t.value}
+  else if(t.dataset.h){const d=t.dataset.h,[a,b]=$$(`[data-h="${d}"]`).map(x=>x.value);DB.hours[d]=a===''&&b===''?null:(a!==''&&b!==''&&+a<+b?[+a,+b]:DB.hours[d])}
+  else return;save();paint()});
+function shrink(f){return new Promise((ok,no)=>{const im=new Image,u=URL.createObjectURL(f);im.onload=()=>{const s=Math.min(1,1000/Math.max(im.width,im.height)),c=document.createElement('canvas');c.width=im.width*s;c.height=im.height*s;c.getContext('2d').drawImage(im,0,0,c.width,c.height);URL.revokeObjectURL(u);ok(c.toDataURL('image/jpeg',.8))};im.onerror=no;im.src=u})}
+async function upImg(t){const f=t.files[0];if(!f)return;if(!/^image\/(jpeg|png|webp)$/.test(f.type)||f.size>10e6){alert('Use JPG, PNG ou WebP de até 10 MB.');return}try{const d=await shrink(f);if(t.dataset.img)DB.img[t.dataset.img]=d;else DB.barbers[+t.dataset.bimg].img=d;save();paint();adm()}catch(e){alert('Não foi possível ler a imagem.')}}
+async function publishAll(){const b=$('#pub');let a;try{a=await claude.use('artifact')}catch(e){}
+  if(!a){b.textContent='Publicação indisponível aqui';return}
+  const st=JSON.stringify(DB).replace(/</g,'\\u003c'),html=SRC.replace(/(<script id="state" type="application\/json">)[\s\S]*?(<\/script>)/,(m,x,y)=>x+st+y);
+  if(!html.includes(st)){b.textContent='Erro ao montar a página';return}
+  b.disabled=true;b.textContent='Publicando…';
+  try{await a.publish(html);dirty=false}catch(e){b.disabled=false;b.textContent=e.code=='conflict'?'Alguém publicou antes. Recarregue a página':'Falha ao publicar ('+(e.code||'erro')+')'}}
+addEventListener('beforeunload',e=>{if(dirty)e.preventDefault()});
+addEventListener('hashchange',route);
+addEventListener('scroll',()=>$('#hd').classList.toggle('s',scrollY>30),{passive:true});
+paint();setInterval(openNow,60000);route();
+</script></body></html>
